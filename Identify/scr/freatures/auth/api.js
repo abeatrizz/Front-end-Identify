@@ -1,12 +1,22 @@
 export const loginApi = async (email, password) => {
-  // Simulação de API
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (email && password) {
+      try {
+        if (!email || !password) {
+          reject(new Error('Email e senha são obrigatórios'));
+          return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          reject(new Error('Formato de email inválido'));
+          return;
+        }
+
         resolve({ success: true, token: 'fake-token' });
-      } else {
-        resolve({ success: false, message: 'Credenciais inválidas' });
+      } catch (error) {
+        reject(new Error('Erro interno no login'));
       }
-    }, 1500);
+    }, Math.random() * 1000 + 500);
   });
 };
