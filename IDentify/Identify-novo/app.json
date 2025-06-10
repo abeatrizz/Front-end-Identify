@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Identify-novo",
+    "slug": "Identify-novo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/1024.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/1024.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/1024.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/1024.png"
+    }
+  }
+}
