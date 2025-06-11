@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "IDentify",
+    "slug": "identify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/D.logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/D.logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/D.logo.png",
+        "backgroundColor": "#D4C9BE"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/D.logo.png",
+      "bundler": "metro"
+    }
+  }
+}
