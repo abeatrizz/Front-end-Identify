@@ -1,6 +1,6 @@
 import { useMutation } from '@tanstack/react-query';
 import api from '../config/api';
-import { toast } from './use-toast';
+import { toast } from '../config/toast';
 import * as FileSystem from 'expo-file-system';
 
 export const useUploadEvidence = () => {
