@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../config/api';
 // import { CaseRequest, CaseResponse } from '@/types/api'; // Removido, pois o projeto é JS
-import { toast } from './use-toast';
+import { toast } from '../config/toast';
 
 export const useCasos = () => {
   return useQuery({
